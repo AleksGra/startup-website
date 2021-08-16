@@ -9,25 +9,258 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- <link rel="stylesheet" href="styles/about.css" /> -->
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <img class="logo__img" src="img/Icon.png" alt="logo" />
-        <span class="logo__name">Foundation </span>
-        <span class="logo__description">Startup landing template</span>
+    <div class="page">
+      <div class="top-section">
+        <header class="header">
+          <div class="logo">
+            <img class="logo__img" src="img/Icon.png" alt="logo" />
+            <div class="logo__text">
+              <div class="logo__name">Foundation</div>
+              <div class="logo__description">Startup landing template</div>
+            </div>
+          </div>
+          <nav class="navigation">
+            <a href="#" class="navigation__item navigation__item_selected"
+              >Home</a
+            >
+            <a href="#" class="navigation__item">Stories</a>
+            <a href="#" class="navigation__item"
+              >Library<i class="navigation__arrow"></i
+            ></a>
+          </nav>
+          <button class="action-button header__button">Get Started</button>
+          <button class="header__menu-button">
+            <span class="header__menu-icon"></span>
+          </button>
+        </header>
+
+        <!-- Headline -->
+
+        <section class="headline">
+          <div class="headline__content">
+            <h1 class="headline__title">Build stunning websites & apps.</h1>
+            <p class="headline__description">
+              Create live segments and target the right people for messages
+              based on their behaviors.
+            </p>
+            <div class="headline__actions">
+              <button class="action-button order__button">Get Started</button>
+              <button class="headline__learn-more-btn headline__actions-btn">
+                Learn More
+              </button>
+            </div>
+          </div>
+          <img
+            class="headline_banner"
+            src="img/ouch.png"
+            alt="Headline Banner"
+          />
+        </section>
       </div>
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li class="nav-list__item nav-list__item_selected">Home</li>
-          <li class="nav-list__item">Stories</li>
-          <li class="nav-list__item">Library</li>
-        </ul>
-      </nav>
-      <button class="header__button">Get Started</button>
-    </header>
-    <section></section>
+      <!-- About
+      <section class="about">
+        <article class="article">
+          <h4 class="article__title">What is it about?</h4>
+          <p class="article__text">
+            Building a website for a startup that looks amazing is not a rocket
+            science anymore.
+          </p>
+        </article>
+        <article class="article">
+          <h4 class="article__title">Who is it for?</h4>
+          <p class="article__text">
+            Startups, small companies and teams, entrepreneurs and web
+            developers.
+          </p>
+        </article>
+      </section> -->
+      <!-- Audience -->
+      <section class="audience">
+        <div class="audience__container">
+          <div class="audience__main">
+            <div class="audience__content descrp">
+              <h4 class="descrp__subtitle">Engage Visitors</h4>
+              <h2 class="descrp__title">Understand your audience</h2>
+              <p class="descrp__text">
+                Early stage company? Eligible applicants get all of our products
+                for just $49 a month.
+              </p>
+            </div>
+
+            <div class="headline__actions" style="justify-content: center">
+              <button class="action-button order__button">Get Started</button>
+              <button class="headline__learn-more-btn headline__actions-btn">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <div class="audience__list cards">
+            <div class="cards__item user-card">
+              <img class="user-card__img" src="img/head.png" alt="Developer" />
+              <span class="user-card__title">Developers</span>
+            </div>
+            <div class="cards__item user-card">
+              <img
+                class="user-card__img"
+                src="img/tv.png"
+                alt="Entertainment"
+              />
+              <span class="user-card__title">Entertainment</span>
+            </div>
+            <div class="cards__item user-card">
+              <img class="user-card__img" src="img/runner.png" alt="Athletes" />
+              <span class="user-card__title">Athletes</span>
+            </div>
+            <div class="cards__item user-card">
+              <img class="user-card__img" src="img/lamp.png" alt="Creators" />
+              <span class="user-card__title">Creators</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Audience -->
+      <!--Order-->
+      <section class="order">
+        <img class="order__illustration" src="img/window.png" alt="Window" />
+        <div class="order__details">
+          <h3 class="order__title">Start your free trial.</h3>
+          <p class="order__text">
+            Get notified about company updates, news and blog posts. We hate
+            spam.
+          </p>
+          <form class="order__form">
+            <input
+              class="order__email"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button class="action-button order__button">Get Started</button>
+          </form>
+          <p class="order__terms">
+            Free 14-day trial · Easy setup · Cancel any time. Check out<a
+              class="order__link"
+              href="#"
+            >
+              Terms of Use</a
+            >.
+          </p>
+        </div>
+      </section>
+      <!-- Order -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-navigation">
+          <div class="about-company">
+            <div class="logo">
+              <img class="logo__img" src="img/Icon-dark.png" alt="logo" />
+              <div class="logo__text">
+                <div class="logo__name">Foundation</div>
+                <div class="logo__description">Startup landing template</div>
+              </div>
+            </div>
+            <div class="logo-vertiacal">
+              <img
+                class="logo-vertiacal__img"
+                src="img/Icon-dark.png"
+                alt="logo"
+              />
+              <div class="logo-vertiacal__text">
+                <div class="logo-vertiacal__name">Foundation</div>
+                <div class="logo-vertiacal__description">
+                  Startup landing template
+                </div>
+              </div>
+            </div>
+
+            <p class="footer__description">
+              Foundation is a website template for startups and small teams. It
+              helps to build a website in no time.
+            </p>
+            <div class="downloads">
+              <img
+                class="downloads__items"
+                src="img/AppStore.png"
+                alt="Apple Store download"
+              />
+              <img
+                class="downloads__items"
+                src="img/Google-Play.png"
+                alt="Google-Play  download"
+              />
+            </div>
+          </div>
+          <div class="footer__line hide_desktop"></div>
+          <div class="additional-navigation">
+            <div class="additional-navigation__column nav-links">
+              <h3 class="nav-links__title">Product</h3>
+              <ul class="nav-links__list">
+                <li class="nav-links__list-item">Acquire Users</li>
+                <li class="nav-links__list-item">Content Marketing</li>
+                <li class="nav-links__list-item">Website Templates</li>
+                <li class="nav-links__list-item">Customer Management</li>
+                <li class="nav-links__list-item">Virtual Inbox</li>
+              </ul>
+            </div>
+          </div>
+          <div class="additional-navigation">
+            <div class="additional-navigation__column nav-links">
+              <h3 class="nav-links__title">Company</h3>
+              <ul class="nav-links__list">
+                <li class="nav-links__list-item">About Foundation</li>
+                <li class="nav-links__list-item">Brand Guidelines</li>
+                <li class="nav-links__list-item">Press Kit</li>
+                <li class="nav-links__list-item">Support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__line hide_mobile"></div>
+        <div class="footer-links">
+          <nav class="terms">
+            <a href="#" class="terms__items">Terms</a>
+            <a href="#" class="terms__items">Privacy</a>
+            <a href="#" class="terms__items">Licence</a>
+          </nav>
+
+          <div class="social-links">
+            <a
+              class="social-links__item"
+              href="https://twitter.com"
+              target="_blank"
+            >
+              <img src="img/social-twitter.png" alt="Twitter link"
+            /></a>
+            <a
+              class="social-links__item"
+              href="https://Facebook.com"
+              target="_blank"
+            >
+              <img src="img/social-fb.png" alt="Facebook link"
+            /></a>
+            <a
+              class="social-links__item"
+              href="https://LinkedIn.com"
+              target="_blank"
+            >
+              <img src="img/social-LinkedIn.png" alt="LinkedIn link"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

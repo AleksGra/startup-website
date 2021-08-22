@@ -37,6 +37,7 @@
 }
 .footer-navigation {
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin: 0;
 
@@ -175,7 +176,7 @@
   }
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 1399px) {
   .footer .logo {
     display: none;
   }

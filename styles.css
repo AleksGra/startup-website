@@ -8,11 +8,6 @@ html {
   color: #2b292d;
 }
 
-.page {
-  width: 100%;
-  overflow-x: hidden;
-}
-
 @media screen and (min-width: 400px) {
   .page {
     max-width: 1400px;
@@ -43,44 +38,6 @@ html {
   .hide_mobile {
     display: none;
   }
-}
-
-.about {
-  width: 100%;
-  background-color: #f4f5f7;
-}
-@media screen and (min-width: 1400px) {
-  .about {
-    display: flex;
-    justify-content: space-between;
-    padding: 77px 130px 76px 130px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .article {
-    width: 555px;
-  }
-}
-.article:last-child {
-  margin-top: 20px;
-}
-@media screen and (min-width: 1400px) {
-  .article:last-child {
-    margin-top: 0;
-  }
-}
-.article__title {
-  margin: 0;
-  line-height: 32px;
-  font-weight: 700;
-  font-size: 22px;
-}
-.article__text {
-  margin-bottom: 0;
-  margin-top: 6px;
-  font-size: 22px;
-  line-height: 32px;
 }
 
 .footer {
@@ -124,6 +81,7 @@ html {
 
 .footer-navigation {
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin: 0;
 }
@@ -274,7 +232,7 @@ html {
   line-height: 25px;
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 1399px) {
   .footer .logo {
     display: none;
   }
@@ -331,7 +289,7 @@ html {
   display: inline-block;
   width: 18px;
   height: 13px;
-  background-image: url(img/icon-humburger.png);
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
 }
 .header__button {
   display: none;
@@ -364,7 +322,7 @@ html {
   margin-left: 11px;
   width: 8px;
   height: 5px;
-  background-image: url(img/arrow.png);
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
 }
 @media screen and (min-width: 1400px) {
   .navigation {
@@ -512,6 +470,10 @@ html {
 .order {
   padding: 50px 15px;
   background-color: #f4f5f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 1400px) {
   .order {
@@ -610,6 +572,7 @@ html {
 .audience__container {
   max-width: 320px;
   padding: 50px 15px;
+  margin: auto;
 }
 @media screen and (min-width: 1400px) {
   .audience__container {

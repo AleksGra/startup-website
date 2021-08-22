@@ -1,6 +1,10 @@
 .order {
   padding: 50px 15px;
   background-color: $color-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
   @include for-large-up {
     display: flex;
@@ -8,6 +12,7 @@
     align-items: flex-start;
     padding: 73px 0px 72px 0px;
   }
+
   &__details {
     max-width: 555px;
   }
